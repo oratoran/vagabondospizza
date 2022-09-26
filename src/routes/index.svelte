@@ -1,6 +1,6 @@
 <script>
     const since = (new Date().getFullYear()) - 1989;
-    const isMonday = new Date().getDay() == 1 ? '-- BUGÜN KAPALIYIZ --': '';
+    const isMonday = new Date().getDay() == 1 ? '-- KAPALIYIZ, TATİLDEYİZ --': '-- KAPALIYIZ, TATİLDEYİZ --';
 </script>
 
     <div class="py-8 flex md:flex-row flex-col-reverse justify-center md:space-x-8 bg-hero-pattern bg-cover">
@@ -44,8 +44,8 @@
             </div>
         </div>
         <div>
-            <p class="text-white text-4xl mb-2 animate-bounce">{isMonday}</p>
-            <p class="text-white">AÇILIŞ: 16:00 KAPANIŞ: 23:00 - PAZARTESİ GÜNLERİ KAPALIYIZ. YEMEKSİZ, İÇECEK SERVİSİ YAPILMAMAKTADIR.</p>
+            <p class="text-white text-4xl mb-2 animate-[bounce_1s_ease-in-out_infinite]">{isMonday}</p>
+            <p class="text-white">SAYIN ZİYARETÇİMİZ, TATİL NEDENİYLE KAPALIYIZ.</p>
         </div>
         <div class="hidden boxes mx-4 my-4">
             <div class="p-6 max-w-sm mx-auto bg-yellow-50  rounded-xl shadow-md flex items-center space-x-4">

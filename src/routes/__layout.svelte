@@ -9,18 +9,12 @@
             <img class="mx-auto" src="/vagabondos-yenikoy-logo.png" alt="vagabondos pizza logo">
         </div>
 
-        <nav class="mobile-nav bg-yellow-100 w-1/6 mx-auto my-4 md:hidden text-center shadow-lg rounded-md" on:click="{()=>(isOpen = !isOpen)}"><span class="burger">☰</span></nav>
-        <nav class="bg-yellow-100 p-4 flex flex-col md:flex-row text-center w-auto mx-auto shadow-lg rounded-md {isOpen ? 'w-full md:w-auto md:flex-row' : 'hidden md:inline-block'}" on:click="{()=>(isOpen = false)}">
-            <a class="link p-2 text-lg" href="/">Ana Sayfa </a>
-            <a sveltekit:prefetch class="link p-2 text-lg" href="/menu">Menümüz </a>
-            <a sveltekit:prefetch class="link p-2 text-lg" href="/yenikoy-pizza-restaurant">Restaurantımız </a>
-            <a sveltekit:prefetch class="link p-2 text-lg" href="/iletisim">İletişim </a>
-        </nav>
+
     
            
     </header>
     </div>
-    <div class="bg-yellow-50">
+    <div class="bg-yellow-50 flex flex-col-reverse">
         <slot/>
     </div>
 <div class="bg-gray-800 py-6 text-center">
